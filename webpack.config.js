@@ -1,4 +1,4 @@
-var path = require('path');
+/*var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -32,4 +32,4 @@ module.exports = {
             apiUrl: 'http://localhost:4000'
         })
     }
-}
+}*/

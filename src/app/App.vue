@@ -1,4 +1,4 @@
-<template>
+<!--<template>
     <div class="jumbotron">
         <div class="container">
             <div class="row">
@@ -9,10 +9,10 @@
             </div>
         </div>
     </div>
-</template>
+</template> -->
 
 <script>
-import { mapState, mapActions } from 'vuex'
+/*import { mapState, mapActions } from 'vuex'
 
 export default {
     name: 'app',
@@ -32,19 +32,19 @@ export default {
             this.clearAlert();
         }
     } 
-};
+}; */
 </script>
 
-<!--<template>
+<template>
 	<div id="app">
-    <LoginPage />
+        <LoginPage />
 	</div>
-</template> -->
+</template> 
 
 <script>
 
 //import Header from "./components/template/Header";
-/*import LoginPage from "./components/template/LoginPage";
+import LoginPage from "../login/LoginPage";
 
 export default {
   name: "App",
@@ -56,7 +56,7 @@ export default {
   }
 
 };
-*/
+
 </script>
 
 
