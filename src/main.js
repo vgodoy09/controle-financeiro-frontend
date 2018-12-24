@@ -1,5 +1,6 @@
 import 'font-awesome/css/font-awesome.css'
-import './assets/css/dark.css'
+import './assets/css/util.css'
+import './assets/css/main.css'
 
 import Vue from 'vue'
 import App from './App'
