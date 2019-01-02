@@ -16,7 +16,7 @@
               <h3 class="white-text mb-5 mt-4 font-weight-bold"><strong>SIGN</strong> <a class="green-text font-weight-bold"><strong> UP</strong></a></h3>
             </div>-->
             <div>
-                <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+                
                   <span class="txt1 p-b-11"> 
                     Username
                   </span>
@@ -71,7 +71,7 @@
                   <div class="col-lg-12 col-md-12">
                       <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold"> Log in</a></p>
                   </div> -->
-                </b-form>
+
             </div>
           <!--</div>
        </div>
@@ -104,18 +104,17 @@
 
 <script>
 
-//import HomePage from "../home/HomePage";
+import HomePage from "../home/HomePage";
 
 export default {
-  //components: { HomePage },
+  components: { HomePage },
   data () {
     return {
+      logado: false,
       form: {
-        logado: false,
-        email: '',
-        name: '',
-        food: null,
-        checked: [],
+        error: false,
+        login: '',
+        password: '',
         messageError: ''
       },
       foods: [
@@ -126,21 +125,9 @@ export default {
     }
   },
   methods: {
-    onSubmit (evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
-    },
-    onReset (evt) {
-      evt.preventDefault();
-      /* Reset our form values */
-      this.form.email = '';
-      this.form.name = '';
-      this.form.food = null;
-      this.form.checked = [];
-      /* Trick to reset/clear native browser form validation state */
-      this.show = false;
-      this.$nextTick(() => { this.show = true });
-    },
+    clickCloseErroLogin: function() {
+			this.error = false;
+		},
     clickLogin: function() {
 			loggerInstance(this);
 		}
@@ -155,8 +142,8 @@ function loggerInstance(vue) {
 		vue.error = true;
 		return;
 	}
-	console.log('login' + vue.login);
-	console.log('password' + vue.password);
+	console.log('login' + vue.form.login);
+	console.log('password' + vue.form.password);
 	/*axios.post("/clinica/login/"+vue.login + "/"+vue.password).then(response => {
 
 		if(response.data.error) {

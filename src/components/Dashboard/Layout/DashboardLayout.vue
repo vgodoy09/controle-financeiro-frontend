@@ -4,23 +4,23 @@
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/admin/overview">
         <i class="nc-icon nc-chart-pie-35"></i>
-        <p>Dashboard</p>
+        <p>Inicio</p>
       </sidebar-link>
       <sidebar-link to="/admin/user">
         <i class="nc-icon nc-circle-09"></i>
-        <p>User Profile</p>
+        <p>Perfil Usuario</p>
       </sidebar-link>
       <sidebar-link to="/admin/table-list">
         <i class="nc-icon nc-notes"></i>
-        <p>Table list</p>
+        <p>Transações</p>
       </sidebar-link>
       <sidebar-link to="/admin/typography">
         <i class="nc-icon nc-paper-2"></i>
-        <p>Typography</p>
+        <p>Contas</p>
       </sidebar-link>
       <sidebar-link to="/admin/icons">
         <i class="nc-icon nc-atom"></i>
-        <p>Icons</p>
+        <p>Categorias</p>
       </sidebar-link>
       <sidebar-link to="/admin/maps">
         <i class="nc-icon nc-pin-3"></i>
