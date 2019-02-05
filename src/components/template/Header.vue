@@ -30,7 +30,7 @@ export default {
   border-bottom: 3px solid rgba(83, 83, 83, 0.24);
   /* background-color: #33b5e5; */
   background: linear-gradient(to right, #04507c96, #02b1d896);
-  max-height: 40px;
+  max-height: 60px;
 
   display: flex;
   justify-content: center;

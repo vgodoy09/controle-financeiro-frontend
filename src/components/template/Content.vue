@@ -27,7 +27,11 @@ export default {
 <style>
 .content {
   grid-area: content;
-  padding: 2px 20px 10px 20px;
-  margin-top: -15px;
+  padding: 2px 20px 10px 170px;
+  margin-top: 0px;
 }
+.bm-burger-button {
+  top: 14px !important;
+}
+
 </style>
