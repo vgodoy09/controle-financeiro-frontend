@@ -3,7 +3,7 @@
     <!-- conteúdo geral -->
     <Header />
     <Content />
-    <!-- <Footer /> -->
+    <Footer />
     <!-- fim -->
   </div>
 </template>
@@ -40,7 +40,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 60px 1fr 40px;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 100%;
   grid-template-areas:
     "header header"
     "content content"

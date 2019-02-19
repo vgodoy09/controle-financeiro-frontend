@@ -3,7 +3,7 @@
     <div>
       <span>
         ©2019
-        <strong>Rede Novo Tempo de Comunicação</strong> - Todos os direitos reservados
+        <strong>Victor Prado de Godoy</strong> - Todos os direitos reservados
       </span>
     </div>
   </footer>
