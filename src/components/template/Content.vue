@@ -1,25 +1,57 @@
 <template>
   <div class="wrapper">
-    <Slide>
-      <a id="home" href="#">
-        <i class="nc-icon nc-chart-pie-35"></i>
-        <span>Inicio</span>
+    <Slide >
+      <a id="home" href="home">
+        <!-- <b-row>
+          <b-col> -->
+            <i class="fa fa-home"></i>
+          <!-- </b-col>
+          <b-col> -->
+          <!-- <div class="line-up"> -->
+            <span >Inicio</span>            
+          <!-- </div> -->
+          <!-- </b-col>
+        </b-row> -->
       </a>
       <a id="profile" href="#">
-        <i class="nc-icon nc-circle-09"></i>
-        <span>Perfil</span>
+        <!-- <b-row>
+          <b-col> -->
+            <i class="fa fa-user"></i>
+          <!-- </b-col>
+          <b-col> -->
+            <span class="line-up">Perfil</span>            
+          <!-- </b-col>
+        </b-row> -->
       </a>
-      <a id="category" href="#">
-        <i class="nc-icon nc-chart-pie-35"></i>
-        <span>Categorias</span>
+      <a id="category" href="category">
+        <!-- <b-row>
+          <b-col> -->
+            <i class="fa fa-cubes"></i>
+          <!-- </b-col>
+          <b-col> -->
+            <span class="line-up">Categorias</span>            
+          <!-- </b-col>
+        </b-row> -->
       </a>
       <a id="contas" href="#">
-        <i class="nc-icon nc-chart-pie-35"></i>
-        <span>Contas</span>
+        <!-- <b-row>
+          <b-col> -->
+            <i class="fa fa-university"></i>
+          <!-- </b-col>
+          <b-col> -->
+            <span class="line-up">Contas</span>            
+          <!-- </b-col>
+        </b-row> -->
       </a>
       <a id="transaction" href="#">
-        <i class="nc-icon nc-chart-pie-35"></i>
-        <span>Transações</span>
+        <!-- <b-row>
+          <b-col> -->
+            <i class="fa fa-exchange"></i>
+          <!-- </b-col>
+          <b-col > -->
+            <span class="line-up">Transações</span>            
+          <!-- </b-col>
+        </b-row> -->
       </a>
     </Slide>
     <main id="page-wrap">
@@ -43,7 +75,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.bm-menu a {
+    color: #b8b7ad;
+}
+
 .content {
   /* background: #b4bad2; */
   grid-area: content;
@@ -52,7 +88,7 @@ export default {
   /* text-align: center; */
   /* height: 100% !important; */
 }
-.bm-burger-button {
+.wrapper >>> .bm-burger-button {
   top: 10px !important;
 }
 
@@ -63,5 +99,14 @@ main {
     /* padding: 3em 2em; */
     /* text-align: center; */
 }
+
+.line-up {
+  /* margin-left: 5px !important; */
+  /* margin-top:-5px; */
+  font-weight: bold;
+  color:white;
+  /* text-align: center; */
+}
+
 
 </style>

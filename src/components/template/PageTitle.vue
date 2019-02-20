@@ -23,9 +23,9 @@ export default {
   margin: 0px;
 }
 
-.page-title i, span {
+/* .page-title i, span {
   color: #147dbf;
-}
+} */
 
 .title-h1 {
   font-size: 40px;
