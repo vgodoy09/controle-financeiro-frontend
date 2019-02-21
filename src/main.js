@@ -7,12 +7,14 @@ import "./config/bootstrap";
 import "./config/msgs";
 
 
+//componente principal o estado da aplicação STORE
+import store from "./config/store/store";
 // import store from "./config/store/store";
 import router from "./config/router";
 
 Vue.config.productionTip = false;
 new Vue({
-  // store,
+  store,
   router,
   render: h => h(App)
 }).$mount("#app");
