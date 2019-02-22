@@ -2,56 +2,44 @@
   <div class="wrapper">
     <Slide >
       <a id="home" href="home">
-        <!-- <b-row>
-          <b-col> -->
+          <div class="image-menu">
             <i class="fa fa-home"></i>
-          <!-- </b-col>
-          <b-col> -->
-          <!-- <div class="line-up"> -->
-            <span >Inicio</span>            
-          <!-- </div> -->
-          <!-- </b-col>
-        </b-row> -->
+          </div>
+          <div class="line-up">
+            <span  >Inicio</span>            
+          </div>
       </a>
       <a id="profile" href="#">
-        <!-- <b-row>
-          <b-col> -->
+          <div class="image-menu">
             <i class="fa fa-user"></i>
-          <!-- </b-col>
-          <b-col> -->
-            <span class="line-up">Perfil</span>            
-          <!-- </b-col>
-        </b-row> -->
+          </div>
+          <div class="line-up">
+            <span >Perfil</span>            
+          </div>
       </a>
       <a id="category" href="category">
-        <!-- <b-row>
-          <b-col> -->
+          <div class="image-menu">
             <i class="fa fa-cubes"></i>
-          <!-- </b-col>
-          <b-col> -->
-            <span class="line-up">Categorias</span>            
-          <!-- </b-col>
-        </b-row> -->
+          </div>
+          <div class="line-up">
+            <span >Categorias</span>            
+          </div>
       </a>
       <a id="contas" href="#">
-        <!-- <b-row>
-          <b-col> -->
+          <div class="image-menu">
             <i class="fa fa-university"></i>
-          <!-- </b-col>
-          <b-col> -->
-            <span class="line-up">Contas</span>            
-          <!-- </b-col>
-        </b-row> -->
+          </div>
+          <div class="line-up">
+            <span >Contas</span>            
+          </div>
       </a>
       <a id="transaction" href="#">
-        <!-- <b-row>
-          <b-col> -->
+          <div class="image-menu">
             <i class="fa fa-exchange"></i>
-          <!-- </b-col>
-          <b-col > -->
-            <span class="line-up">Transações</span>            
-          <!-- </b-col>
-        </b-row> -->
+          </div>
+          <div class="line-up">
+            <span >Transações</span>            
+          </div>
       </a>
     </Slide>
     <main id="page-wrap">
@@ -101,12 +89,15 @@ main {
 }
 
 .line-up {
-  /* margin-left: 5px !important; */
-  /* margin-top:-5px; */
+  width: 100%; 
+  margin-top : -1px;
+  margin-left: 20px;
   font-weight: bold;
   color:white;
-  /* text-align: center; */
 }
 
+.image-menu {
+  width: 40px;
+}
 
 </style>
