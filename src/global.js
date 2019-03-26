@@ -1,5 +1,5 @@
 //caminho teste
-export const baseApiUrl = "http://10.21.121.11:8080/controlefinanceiro";
+export const baseApiUrl = "http://18.191.173.179:8080/controlefinanceiro";
 
 export function showError(e) {
   if (e && e.response && e.response.data) {

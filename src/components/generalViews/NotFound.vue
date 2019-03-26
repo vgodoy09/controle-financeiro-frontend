@@ -1,27 +1,17 @@
 <template>
-    <div class="notfound">
-        Nao encontrada
-
-    </div>
+  <div class="notfound">Nao encontrada</div>
 </template>
 
 <script>
-
-
 export default {
-    name: "NotFound",
-    data() {
-        
-    },
-    methods: {
-        
-    }
-}
-
+  name: "NotFound",
+  data() {},
+  methods: {}
+};
 </script>
 
 <style>
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 </style>

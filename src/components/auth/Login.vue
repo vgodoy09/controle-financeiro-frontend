@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="pen-title">
-      <h1>Atendimento Escola Bíblica</h1>
+      <h1>Controle Financeiro Pessoal</h1>
     </div>
     <!-- Form Module-->
     <div class="module form-module">
       <div class="toggle"></div>
       <div class="form">
-        <h2>
+        <!-- <h2>
           <img src="@/assets/logo.jpg" width="30%" height="20%" alt="Bíblia">
-        </h2>
+        </h2>-->
         <form v-on:submit.prevent="logged">
           <input type="text" ref="refLogin" v-model="login" autofocus placeholder="Usuário">
           <input type="password" v-model="password" placeholder="Senha">
@@ -32,12 +32,12 @@ import { baseApiUrl } from "@/global";
 import { EventBusLogged } from "@/eventBus/eventBusLogged";
 
 var configMessage = {
-              iconPack: "fontawesome",
-              position: "top-center",
-              className: ["toast-global"],
-              type: "error",
-              duration: 3000
-            }
+  iconPack: "fontawesome",
+  position: "top-center",
+  className: ["toast-global"],
+  type: "error",
+  duration: 3000
+};
 
 export default {
   name: "Login",
@@ -49,17 +49,22 @@ export default {
   },
   methods: {
     logged() {
-      if(this.login == null) {
+      if (this.login == null) {
         this.$toasted.show("O usuário é obrigatório", configMessage);
         return;
       }
 
-      if(this.password == null) {
+      if (this.password == null) {
         this.$toasted.show("A senha é obrigatório", configMessage);
         return;
       }
 
-      axios.post(`${baseApiUrl}/login`, { userName: this.login, password: this.password}).then(resp => {
+      axios
+        .post(`${baseApiUrl}/login`, {
+          userName: this.login,
+          password: this.password
+        })
+        .then(resp => {
           if (resp.data.error) {
             this.$toasted.show(resp.data.message, configMessage);
           } else {
@@ -67,8 +72,12 @@ export default {
             sessionStorage.setItem("user", this.login);
             EventBusLogged.$emit("refreshLogged");
           }
-        }).catch(error => {
-          this.$toasted.show("Ocorreu um erro inesperado, contacte o administrador", configMessage);
+        })
+        .catch(error => {
+          this.$toasted.show(
+            "Ocorreu um erro inesperado, contacte o administrador",
+            configMessage
+          );
         });
     }
   },
@@ -96,10 +105,10 @@ export default {
   font-size: 12px;
 }
 .pen-title span .fa {
-  color: #33b5e5;
+  color: #38c22c;
 }
 .pen-title span a {
-  color: #33b5e5;
+  color: #38c22c;
   font-weight: 600;
   text-decoration: none;
 }
@@ -110,7 +119,7 @@ export default {
   background: #ffffff;
   max-width: 400px;
   width: 100%;
-  border-top: 5px solid #33b5e5;
+  border-top: 5px solid #38c22c;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
@@ -119,7 +128,7 @@ export default {
   position: absolute;
   top: -0;
   right: -0;
-  background: #33b5e5;
+  background: #38c22c;
   width: 30px;
   margin: -5px 0 0;
   color: #ffffff;
@@ -158,7 +167,7 @@ export default {
 }
 .form-module h2 {
   margin: 0 0 20px;
-  color: #33b5e5;
+  color: #38c22c;
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
@@ -175,12 +184,12 @@ export default {
   transition: 0.3s ease;
 }
 .form-module input:focus {
-  border: 1px solid #33b5e5;
+  border: 1px solid #38c22c;
   color: #333333;
 }
 .form-module button {
   cursor: pointer;
-  background: #33b5e5;
+  background: #38c22c;
   width: 100%;
   border: 0;
   padding: 10px 15px;
@@ -188,7 +197,7 @@ export default {
   transition: 0.3s ease;
 }
 .form-module button:hover {
-  background: #178ab4;
+  background: #38c22c;
 }
 .form-module .cta {
   background: #f2f2f2;
@@ -207,6 +216,6 @@ export default {
 }
 
 .form-module .cta a:hover {
-  text-decoration: underline #178ab4;
+  text-decoration: underline #17b417;
 }
 </style>
